@@ -17,8 +17,8 @@
     </nav>
   </header>
 
-  <main id="maincontent">
-    <section id="map-container">
+  <main role = "application" id="maincontent">
+    <section aria-label="map" id="map-container">
       <div id='map' style='width: 100%; height: 400px;'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZW5hcy1zYW1pciIsImEiOiJjaml1M3BleHYwODhnM2psZDhsdTJ3MWt1In0.MDzH26nwoJujBtxG0rToNg';
@@ -29,7 +29,7 @@ style: 'mapbox://styles/mapbox/streets-v10'
 </script>
     </section>
     <section>
-      <form class="filter-options">
+      <form role = "select options" class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="Select neighborhoods">
           <option value="all">All Neighborhoods</option>
